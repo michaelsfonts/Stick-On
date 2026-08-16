@@ -6,11 +6,7 @@ Turned them into a typeface, 0–9. Monospaced, one slot per digit. Skinny `1`, 
 
 You don't overlap stickers when you line them up. So I didn't let the font either.
 
-<img src="images/stickers.jpg" alt="Stick-on vinyl numbers reading 90026 on a concrete wall" width="360">
-
-<img src="images/specimen-digits.jpg" alt="The digits 0 through 9" width="360">
-
-<img src="images/specimen-samples.jpg" alt="Sample numbers set in Stick On" width="360">
+<img src="images/stickers.jpg" alt="Stick-on vinyl numbers reading 90026 on a concrete wall" width="240"> <img src="images/specimen-samples.jpg" alt="Sample numbers set in Stick On" width="240"> <img src="images/specimen-digits.jpg" alt="The digits 0 through 9" width="240">
 
 ## Get the font
 
