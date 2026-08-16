@@ -40,12 +40,6 @@ Self-host the web files and point `@font-face` at them:
 
 It only draws `0`–`9`. Set it on something that's just digits.
 
-## Using it in Microsoft Office
-
-Install `fonts/desktop/StickOn-Regular.otf` (or the `.ttf`), restart the app, and pick **Stick On** from the font menu. Type numbers.
-
-![Stick On used in Microsoft Word](images/office.jpg)
-
 ## License
 
 SIL Open Font License 1.1 — see [`OFL.txt`](OFL.txt). Free to use, study, modify, and share; just don't sell it on its own.
