@@ -2,7 +2,7 @@
 
 The stick-on numbers from the hardware store. The little vinyl digits off the rack. The ones you grab for labeling a mailbox or slaps.
 
-Turned them into a typeface, 0–9. Monospaced, one slot per digit. Skinny `1`, fat `8`, same box.
+Turned them into a font, 0–9. A numeral font. Monospaced, one slot per digit. Skinny `1`, fat `8`, same box.
 
 You don't overlap stickers when you line them up. So I didn't let the font either.
 
