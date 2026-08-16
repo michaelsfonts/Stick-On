@@ -1,16 +1,16 @@
 # Stick On
 
-![Stick-on vinyl numbers reading 90026 on a concrete wall](images/stickers.jpg)
-
 The stick-on numbers from the hardware store. The little vinyl digits off the rack. The ones you grab for labeling a mailbox or slaps.
 
 Turned them into a typeface, 0–9. Monospaced, one slot per digit. Skinny `1`, fat `8`, same box.
 
 You don't overlap stickers when you line them up. So I didn't let the font either.
 
-![The digits 0 through 9](images/specimen-digits.jpg)
+<img src="images/stickers.jpg" alt="Stick-on vinyl numbers reading 90026 on a concrete wall" width="360">
 
-![Sample numbers set in Stick On](images/specimen-samples.jpg)
+<img src="images/specimen-digits.jpg" alt="The digits 0 through 9" width="360">
+
+<img src="images/specimen-samples.jpg" alt="Sample numbers set in Stick On" width="360">
 
 ## Get the font
 
