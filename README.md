@@ -36,6 +36,18 @@ Self-host the web files and point `@font-face` at them:
 
 It only draws `0`–`9`. Set it on something that's just digits.
 
+## Build it yourself
+
+If you want to change the font or build it yourself, everything you need is in [`source/`](source). You'll need Python 3.
+
+```bash
+cd source
+./build.sh
+./fix-copyright.py
+```
+
+The first time, it installs the build tools. Your new fonts show up in `source/output/`.
+
 ## License
 
 SIL Open Font License 1.1 — see [`OFL.txt`](OFL.txt). Free to use, study, modify, and share; just don't sell it on its own.
