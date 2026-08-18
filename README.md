@@ -40,6 +40,6 @@ It only draws `0`–`9`. Set it on something that's just digits.
 
 SIL Open Font License 1.1 — see [`OFL.txt`](OFL.txt). Free to use, study, modify, and share; just don't sell it on its own.
 
-Copyright 2026 Michael Seh, with Reserved Font Name "Stick On".
+Copyright (c) 2026, Michael Seh, with Reserved Font Name "Stick On".
 
 [michaelsfonts.com](https://michaelsfonts.com)
