@@ -17,8 +17,11 @@ set -euo pipefail
 
 # --- Config ---------------------------------------------------------------
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO="$(cd "$HERE/.." && pwd)"
 UFO="${1:-$HERE/StickOn.ufo}"
-OUT="$HERE/output"
+OUT="$HERE/output"        # temporary build staging; removed at the end
+DESKTOP="$REPO/fonts/desktop"  # tracked home for OTF + TTF
+WEB="$REPO/fonts/web"          # tracked home for WOFF + WOFF2
 VENV="$HERE/.venv"
 MONO_WIDTH=600            # the single advance width all glyphs must have
 
@@ -63,6 +66,7 @@ for ext in ("otf", "ttf"):
     f = TTFont(path)
     _, lsb = f["hmtx"][".notdef"]
     f["hmtx"][".notdef"] = (mono, lsb)
+    f["OS/2"].fsType = 0    # 0 = Installable, no embedding restriction (correct for OFL)
     f.save(path)
 
 # Build WOFF and WOFF2 from the corrected TTF.
@@ -77,7 +81,19 @@ widths = {w for w, _ in (check["hmtx"][g] for g in check.getGlyphOrder())}
 print(f"   advance widths in output: {widths}")
 if widths != {mono}:
     sys.exit(f"error: expected all advances == {mono}, got {widths}")
+
+fstype = check["OS/2"].fsType
+print(f"   OS/2.fsType in output: {fstype}")
+if fstype != 0:
+    sys.exit(f"error: expected fsType == 0, got {fstype}")
 PYEOF
 
-echo ">> done. Files in $OUT:"
-ls -1 "$OUT"
+# --- Distribute into the tracked fonts/ tree, then drop the staging dir ----
+echo ">> distributing fonts into $REPO/fonts and cleaning up"
+mkdir -p "$DESKTOP" "$WEB"
+cp "$OUT/$BASENAME.otf"   "$OUT/$BASENAME.ttf"   "$DESKTOP/"
+cp "$OUT/$BASENAME.woff"  "$OUT/$BASENAME.woff2" "$WEB/"
+rm -rf "$OUT"
+
+echo ">> done. Fonts in $REPO/fonts:"
+ls -1 "$DESKTOP" "$WEB"
