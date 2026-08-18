@@ -1,1 +1,5 @@
 .DS_Store
+
+# build artifacts from source/build.sh
+source/.venv/
+source/output/
