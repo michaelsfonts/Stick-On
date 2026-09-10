@@ -50,7 +50,7 @@ The first time, it installs the build tools. Your new fonts show up in `source/o
 
 ## License
 
-Under the SIL Open Font License 1.1, full text in [`OFL.txt`](OFL.txt). Do what you want with it, short of selling the font by itself.
+SIL Open Font License 1.1, full text in [`OFL.txt`](OFL.txt). Do what you want with it, just don't sell the font by itself.
 
 Copyright (c) 2026, Michael Seh, with Reserved Font Name "Stick On".
 
