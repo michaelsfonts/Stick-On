@@ -12,8 +12,8 @@ You don't overlap stickers when you line them up. So I didn't let the font eithe
 
 Grab a release from the [Releases](../../releases) page, or pull the files straight from [`fonts/`](fonts):
 
-- **`fonts/desktop/`** — `.otf` and `.ttf` for installing on your computer.
-- **`fonts/web/`** — `.woff2` and `.woff` for the web.
+- **`fonts/desktop/`**: `.otf` and `.ttf` for installing on your computer.
+- **`fonts/web/`**: `.woff2` and `.woff` for the web.
 
 ## Using it on the web
 
@@ -50,7 +50,7 @@ The first time, it installs the build tools. Your new fonts show up in `source/o
 
 ## License
 
-SIL Open Font License 1.1 — see [`OFL.txt`](OFL.txt). Free to use, study, modify, and share; just don't sell it on its own.
+SIL Open Font License 1.1, see [`OFL.txt`](OFL.txt). Free to use, study, modify, and share; just don't sell it on its own.
 
 Copyright (c) 2026, Michael Seh, with Reserved Font Name "Stick On".
 
