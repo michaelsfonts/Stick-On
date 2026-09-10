@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""fix-copyright.py — restore the exact copyright in a compiled OTF's CFF table.
+"""fix-copyright.py: restore the exact copyright in a compiled OTF's CFF table.
 
 fontmake/ufo2ft runs the copyright through a PostScript-name filter before
 storing it in the CFF `Copyright` operator, which strips characters like
@@ -11,7 +11,7 @@ The exact string is read from the UFO's fontinfo.plist (the source of truth),
 so it always stays in sync with what you build. Only the OTF has a CFF table;
 the TTF/WOFF/WOFF2 carry the copyright solely in `name` and need no fix.
 
-Run it AFTER build.sh (re-run it after every rebuild — fontmake re-strips).
+Run it AFTER build.sh (re-run it after every rebuild, fontmake re-strips).
 
 Usage:
   ./fix-copyright.py                                   # OTF + UFO defaults below

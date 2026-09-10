@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# build.sh — compile StickOn.ufo into OTF, TTF, WOFF, and WOFF2.
+# build.sh: compile StickOn.ufo into OTF, TTF, WOFF, and WOFF2.
 #
 # Produces a strictly monospaced font (every glyph advance = 600), including
 # a fix for the auto-generated .notdef, which ufo2ft otherwise emits at a
